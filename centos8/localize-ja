@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# locale & keymap
+sudo localectl set-locale LANG=ja_JP.utf8
+sudo localectl set-keymap jp106
+
+# timezone
+sudo setenforce 0
+sudo timedatectl set-timezone Asia/Tokyo
+sudo setenforce 1
+
+# lang pack
+sudo dnf install -y langpacks-ja

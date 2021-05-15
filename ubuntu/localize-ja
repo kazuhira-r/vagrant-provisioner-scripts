@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sudo apt install -y language-pack-ja manpages-ja manpages-ja-dev tzdata && \
+sudo update-locale LANG=ja_JP.UTF-8 LANGUAGE=ja_JP: && \
+sudo timedatectl set-timezone Asia/Tokyo && \
+sudo LANG=ja_JP.UTF-8 apt update
